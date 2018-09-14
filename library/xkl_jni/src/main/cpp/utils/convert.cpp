@@ -57,6 +57,7 @@ char *jstringTostring(JNIEnv *env, jstring jstr) {
         rtn[alen] = 0;
     }
     env->ReleaseByteArrayElements(barr, ba, 0);
+
     return rtn;
 }
 
