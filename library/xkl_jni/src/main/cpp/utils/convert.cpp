@@ -3,6 +3,7 @@
 //
 
 #include <string>
+#include <malloc.h>
 #include "convert.h"
 
 /**
