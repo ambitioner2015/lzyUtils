@@ -36,14 +36,14 @@ android {
         def Properties keys = new Properties()
 
         // 如果读取不到'keystore.props.file'属性，就使用debug keystore
-        if (props['keystore.props.file']) {
-            keys.load(new FileInputStream(file(props['keystore.props.file'])))
-        } else {
-            keys["store"] = '../local/keystore/debug.keystore'
-            keys["alias"] = 'androiddebugkey'
-            keys["storePass"] = 'android'
-            keys["pass"] = 'android'
-        }
+//        if (props['keystore.props.file']) {
+//            keys.load(new FileInputStream(file(props['keystore.props.file'])))
+//        } else {
+//            keys["store"] = '../local/keystore/debug.keystore'
+//            keys["alias"] = 'androiddebugkey'
+//            keys["storePass"] = 'android'
+//            keys["pass"] = 'android'
+//        }
 
         debug {
 //            storeFile file(keys["store"])
@@ -54,11 +54,11 @@ android {
 
         release {
             // release版本使用assert确保存在该属性否则报错，避免错误打包
-            assert props['keystore.props.file'];
-            storeFile file(keys["store"])
-            keyAlias keys["alias"]
-            storePassword keys["storePass"]
-            keyPassword keys["pass"]
+//            assert props['keystore.props.file'];
+//            storeFile file(keys["store"])
+//            keyAlias keys["alias"]
+//            storePassword keys["storePass"]
+//            keyPassword keys["pass"]
         }
 
         preview {
