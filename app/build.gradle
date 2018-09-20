@@ -18,6 +18,7 @@ android {
 //        resValue "string", "build_time", buildTime()
 //        resValue "string", "build_host", hostName()
 //        resValue "string", "build_revision", revision()
+        vectorDrawables.useSupportLibrary = true
     }
 
     compileOptions {
@@ -154,6 +155,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:design:25.3.0'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

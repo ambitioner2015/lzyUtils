@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.skyseraph.xknife.MainActivity">
 
@@ -29,5 +30,20 @@
         android:layout_marginTop="2dp"
         android:padding="10dp"
         android:text="RxHttp" />
+
+    <com.skyseraph.xknife.lib.widge.module.loading.BounceLoadingView
+        android:layout_width="100dp"
+
+        android:layout_height="100dp" />
+
+    <com.skyseraph.xknife.lib.widge.module.loading.IndicatorLoadingView
+        android:layout_width="30dp"
+        app:indicatorColor="@color/colorPrimaryDark"
+        android:layout_height="30dp" />
+
+    <com.skyseraph.xknife.lib.widge.module.loading.RotateLoading
+        app:loading_color="@color/colorPrimaryDark"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
 
 </LinearLayout>
