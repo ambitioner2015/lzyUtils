@@ -173,6 +173,7 @@ dependencies {
     if (!isModuleDebug.toBoolean()) {
         compile project(':module:xkm_launch')
         compile project(':module:xkm_userlogin')
+        compile project(':module:news')
     } else {
         compile project(':bridge:xkb_bridge')
     }

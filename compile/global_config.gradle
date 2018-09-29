@@ -9,14 +9,14 @@ ext {
     abortOnLintError = false
     checkLintRelease = false
 
-    android = [compileSdkVersion        : 24,
+    android = [compileSdkVersion        : 26,
                buildToolsVersion        : "25.0.2",
                applicationId            : "com.skyseraph.xknife",
                applicationIdUserLogin   : "com.skyseraph.xknife.mod.userlogin",
                applicationIdLaunch      : "com.skyseraph.xknife.mod.launch",
                applicationIdUpgrade     : "com.skyseraph.xknife.mod.upgrade",
                minSdkVersion            : 15,
-               targetSdkVersion         : 24,
+               targetSdkVersion         : 26,
                versionCode              : 1,
                versionName              : "0.0.1",
                testInstrumentationRunner: "android.support.test.runner.AndroidJUnitRunner"

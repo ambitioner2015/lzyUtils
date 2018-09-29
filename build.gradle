@@ -12,6 +12,7 @@ buildscript {
         jcenter {
             url 'http://jcenter.bintray.com'
         }
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
@@ -30,6 +31,7 @@ allprojects {
         jcenter {
             url 'http://jcenter.bintray.com'
         }
+        google()
     }
 }
 

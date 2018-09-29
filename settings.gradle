@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':fragment_utils', ':news', ':video', ':learn'
 include ':library:xkl_jni'
 include ':library:xkl_utils'
 include ':library:xkl_widges'

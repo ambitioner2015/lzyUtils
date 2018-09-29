@@ -19,6 +19,11 @@ import com.skyseraph.xknife.R;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,11 +90,11 @@ public class HomeActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            startActivity(new Intent(HomeActivity.this,ScrollingActivity.class));
+            startActivity(new Intent(HomeActivity.this,IndexActivity.class));
         } else if (id == R.id.nav_gallery) {
             startActivity(new Intent(HomeActivity.this,TabActivity.class));
         } else if (id == R.id.nav_slideshow) {
-
+            startActivity(new Intent(HomeActivity.this,ScrollingActivity.class));
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
